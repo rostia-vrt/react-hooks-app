@@ -14,6 +14,6 @@ const handlers = {
 };
 
 export const githubReducer = (state, action) => {
-  const handler = handlers[action.types] || handlers.DEFAULT;
+  const handler = handlers[action.type] || handlers.DEFAULT;
   return handler(state, action);
 };
