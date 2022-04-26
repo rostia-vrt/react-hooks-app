@@ -17,9 +17,9 @@ function App() {
           <div className="container pt-4">
             <Alert alert={{ text: "test alert" }} />
             <Routes>
-              <Route path="/home" exact element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/profile:name" element={<Profile />} />
+              <Route path="/home" exact element={<Home/>} />
+              <Route path="/about" element={<About/>} />
+              <Route path="/profile/:name" element={<Profile/>} />
             </Routes>
           </div>
         </BrowserRouter>
